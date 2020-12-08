@@ -1,1 +1,2 @@
 File has errors in it.
+new line found
