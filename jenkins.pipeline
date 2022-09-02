@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checkout git repo'
+            }
+        }
+stage('Build') {
+            steps {
+                echo 'Build the source'
+            }
+        }
+
+stage('test') {
+            steps {
+                echo 'Running test'
+            }
+        }
+
+stage('Sonarqube') {
+            steps {
+                echo 'Code quality/inspection'
+            }
+        }
+
+stage('Deploy') {
+            steps {
+                echo 'Deployment'
+            }
+        }
+
+    }
+}
