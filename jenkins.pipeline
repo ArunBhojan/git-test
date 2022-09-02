@@ -36,6 +36,10 @@ stage('Deploy') {
                 echo 'Deployment'
             }
         }
-
+post{
+    always{
+          emailext attachLog: true, body: '', subject: 'Build results', to: 'arunbhojan@gmail.com'
+          }
+    }      
     }
 }
