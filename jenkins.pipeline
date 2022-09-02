@@ -2,7 +2,7 @@ pipeline {
   agent {
     node {
       label 'windows'
-      customWorkspace 'c:\temp\pipeline'
+      customWorkspace 'c:\\temp\\pipeline'
     }
   }
 
